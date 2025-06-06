@@ -45,18 +45,28 @@ const Skills = () => {
         </div>
 
         {/* Express JS */}
-        <div className="bg-gray-200 p-6 rounded-lg shadow-md text-center hover:shadow-xl hover:scale-105 transition-transform duration-300">
-          <h3 className="font-bold text-gray-700">Express JS</h3>
+        <div className="bg-green-200 p-6 rounded-lg shadow-md text-center hover:shadow-xl hover:scale-105 transition-transform duration-300">
+          <h3 className="font-bold text-green-700">Express JS</h3>
         </div>
 
         {/* React JS */}
-        <div className="bg-blue-200 p-6 rounded-lg shadow-md text-center hover:shadow-xl hover:scale-105 transition-transform duration-300">
-          <h3 className="font-bold text-blue-700">React JS</h3>
+        <div className="bg-green-200 p-6 rounded-lg shadow-md text-center hover:shadow-xl hover:scale-105 transition-transform duration-300">
+          <h3 className="font-bold text-green-700">React JS</h3>
+        </div>
+
+         {/* Node JS */}
+        <div className="bg-green-200 p-6 rounded-lg shadow-md text-center hover:shadow-xl hover:scale-105 transition-transform duration-300">
+          <h3 className="font-bold text-green-700">Node JS</h3>
         </div>
 
         {/* MySQL */}
         <div className="bg-indigo-100 p-6 rounded-lg shadow-md text-center hover:shadow-xl hover:scale-105 transition-transform duration-300">
           <h3 className="font-bold text-indigo-600">MySQL</h3>
+        </div>
+
+        {/* Rest APIs */}
+        <div className="bg-orange-100 p-6 rounded-lg shadow-md text-center hover:shadow-xl hover:scale-105 transition-transform duration-300">
+          <h3 className="font-bold text-indigo-600">REST APIs</h3>
         </div>
 
         {/* Data Structure & Algorithm */}
