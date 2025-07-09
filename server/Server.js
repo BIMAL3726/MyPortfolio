@@ -10,8 +10,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 const allowedOrigins = [
-  'http://localhost:3000',
-  'https://myportfolio-1-md2r.onrender.com'
+  'https://myportfolio-bsnp.onrender.com'
 ];
 app.use(cors({
   origin: function (origin, callback) {
