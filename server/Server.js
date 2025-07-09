@@ -8,9 +8,24 @@ dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
+const allowedOrigins = [
+  'https://myportfolio-2-4tcz.onrender.com',
+  'https://myportfolio-1-bdca.onrender.com',
+  'http://localhost:3000'
+];
 
-// Middleware
-app.use(cors({ origin: 'https://myportfolio-1-bdca.onrender.com' })); // frontend origin
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  methods: ['GET', 'POST'],
+  credentials: true
+}));
+
 app.use(express.json());
 
 // Routes
