@@ -8,11 +8,8 @@ dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
-const allowedOrigins = [
-  'https://myportfolio-2-4tcz.onrender.com',
-  'https://myportfolio-1-bdca.onrender.com',
-  'http://localhost:3000'
-];
+
+const allowedOrigins = ['http://localhost:3000'];
 
 app.use(cors({
   origin: function (origin, callback) {
