@@ -10,7 +10,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Middleware
-app.use(cors({ origin: 'http://localhost:3000','https://myportfolio-1-bdca.onrender.com' })); // frontend origin
+app.use(cors({ origin: 'https://myportfolio-1-bdca.onrender.com' })); // frontend origin
 app.use(express.json());
 
 // Routes
