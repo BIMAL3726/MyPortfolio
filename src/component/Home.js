@@ -25,12 +25,12 @@ const Home = () => {
           <h2 className="text-2xl font-semibold text-gray-300 mb-4">
             Software Developer
           </h2>
-          <p className="text-gray-400 leading-relaxed mb-6">
+          {/* <p className="text-gray-400 leading-relaxed mb-6">
             A passionate MERN Stack developer from West Bengal, India. I love
             building responsive, modern web apps using React, Node.js, and
             MongoDB. Currently working on real-world projects that make a
             difference.
-          </p>
+          </p> */}
 
           <a
             href="#contact"
