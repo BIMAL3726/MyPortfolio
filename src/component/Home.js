@@ -5,8 +5,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className=" md:h-80 flex items-center justify-center bg-gradient-to-r from-[#0f172a] via-[#1e293b] to-[#0f172a] text-white px-6 md:px-20"
-
+      className="h-auto md:h-80 flex items-center justify-center bg-gradient-to-r from-[#0f172a] via-[#1e293b] to-[#0f172a] text-white px-6 md:px-20 py-12 md:py-0"
     >
       <div className="flex flex-col md:flex-row items-center gap-10">
         {/* Profile Image */}
@@ -27,9 +26,10 @@ const Home = () => {
             Software Developer
           </h2>
           <p className="text-gray-400 leading-relaxed mb-6">
-            A passionate MERN Stack developer from West Bengal, India. I love building 
-            responsive, modern web apps using React, Node.js, and MongoDB. Currently 
-            working on real-world projects that make a difference.
+            A passionate MERN Stack developer from West Bengal, India. I love
+            building responsive, modern web apps using React, Node.js, and
+            MongoDB. Currently working on real-world projects that make a
+            difference.
           </p>
 
           <a

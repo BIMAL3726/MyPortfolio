@@ -31,9 +31,10 @@ const Header = () => {
 
 {/* Mobile Menu (Slide in from Left) */}
 <ul
-  className={`fixed top-0 left-0 h-full w-64 bg-indigo-700 text-white flex flex-col items-center justify-center space-y-8 shadow-lg transform transition-transform duration-500 ease-in-out z-40
+  className={`fixed top-16 left-0 h-auto w-64 bg-gradient-to-b from-[#0f172a] via-[#1e293b] to-[#0f172a] text-white flex flex-col items-center justify-center space-y-5 shadow-lg transform transition-transform duration-500 ease-in-out z-40
   ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}
 >
+
   <li><a href="#home" onClick={toggleMenu}>Home</a></li>
   <li><a href="#about" onClick={toggleMenu}>About</a></li>
   <li><a href="#skills" onClick={toggleMenu}>Skills</a></li>
