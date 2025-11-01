@@ -8,7 +8,7 @@ const Skills = () => {
       className="text-gray-900 py-10 px-10 bg-cover bg-center"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
-      <h2 className="text-4xl font-bold text-center mb-12 text-white drop-shadow-lg">Skills</h2>
+      <h2 className="text-4xl font-bold text-center mb-6 text-indigo-400">Skills</h2>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
         {/* C */}
         <div className="bg-blue-100 p-6 rounded-lg shadow-md text-center hover:shadow-xl hover:scale-105 transition-transform duration-300">
