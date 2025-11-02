@@ -36,32 +36,41 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <div
+    <section
       id="experience"
-      className="p-6 bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a] text-white"
+      className="bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a] text-white py-10 px-4 sm:px-6 lg:px-8"
     >
-      <h2 className="text-4xl font-bold text-center mb-6 text-indigo-400">
-        Experience
-      </h2>
-      {experiences.map((exp, index) => (
-        <div
-          key={index}
-         className="mb-6 p-6 border border-blue-500 rounded-xl shadow-lg bg-blue-900/20 backdrop-blur-md hover:bg-blue-900/30 transition-all duration-300 hover:scale-[1.02]"
+      {/* Shared container for proper alignment */}
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 text-indigo-400">
+          Experience
+        </h2>
 
-        >
-          <h3 className="text-2xl font-semibold text-indigo-300">{exp.title}</h3>
-          <p className="text-sm text-gray-300 font-semibold">
-            {exp.company} &nbsp;||&nbsp; {exp.duration}
-          </p>
-          <p className="text-sm italic text-gray-200 mb-3">{exp.location}</p>
-          <ul className="list-disc list-inside space-y-1 text-gray-200">
-            {exp.responsibilities.map((task, idx) => (
-              <li key={idx}>{task}</li>
-            ))}
-          </ul>
-        </div>
-      ))}
-    </div>
+        {experiences.map((exp, index) => (
+          <div
+            key={index}
+            className="mb-6 p-5 sm:p-6 border border-blue-500 rounded-xl shadow-lg bg-blue-900/20 backdrop-blur-md hover:bg-blue-900/30 transition-all duration-300 hover:scale-[1.02]"
+          >
+            <h3 className="text-xl sm:text-2xl font-semibold text-indigo-300 mb-1">
+              {exp.title}
+            </h3>
+            <p className="text-sm text-gray-300 font-semibold mb-1">
+              {exp.company} &nbsp;||&nbsp; {exp.duration}
+            </p>
+            <p className="text-sm italic text-gray-200 mb-3">{exp.location}</p>
+
+            {/* Same left-right edge alignment on all devices */}
+            <ul className="list-disc list-inside space-y-1 text-gray-200 text-justify">
+              {exp.responsibilities.map((task, idx) => (
+                <li key={idx} className="leading-relaxed">
+                  {task}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 };
 
